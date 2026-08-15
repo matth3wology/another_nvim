@@ -8,6 +8,13 @@ return {
   opts = {
     view = { width = 30 },
     renderer = { group_empty = true },
-    filters = { dotfiles = false },
+    filters = {
+      dotfiles = false,      -- show hidden/dotfiles
+      git_ignored = false,   -- show gitignored files
+      custom = { "^.git$" }, -- but still hide the .git folder specifically
+    },
+    git = {
+      ignore = false,        -- also needed in some versions to stop git-ignore filtering
+    },
   },
 }

@@ -57,6 +57,11 @@ opt.timeoutlen = 400
 opt.confirm = true
 opt.inccommand = "split"
 
+-- Folding
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = false   -- don't fold everything by default when you open a file
+opt.foldlevel = 99       -- start with everything unfolded (high number = mostly open)
 --------------------------------------------------------------------------
 -- KEYMAPS
 --------------------------------------------------------------------------

@@ -14,7 +14,6 @@ return {
     on_attach = function(bufnr)
       local gs = require("gitsigns")
       local map = vim.keymap.set
- 
       map("n", "]h", gs.next_hunk, { buffer = bufnr, desc = "Next git hunk" })
       map("n", "[h", gs.prev_hunk, { buffer = bufnr, desc = "Prev git hunk" })
       map("n", "<leader>hs", gs.stage_hunk, { buffer = bufnr, desc = "Stage hunk" })
