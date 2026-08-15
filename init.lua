@@ -60,16 +60,16 @@ opt.inccommand = "split"
 -- Folding
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldenable = false   -- don't fold everything by default when you open a file
-opt.foldlevel = 99       -- start with everything unfolded (high number = mostly open)
+opt.foldenable = false -- don't fold everything by default when you open a file
+opt.foldlevel = 99     -- start with everything unfolded (high number = mostly open)
+
 --------------------------------------------------------------------------
 -- KEYMAPS
 --------------------------------------------------------------------------
 local map = vim.keymap.set
 
 -- Move selected lines up/down
-map("v", "J", ":m '>+1<CR>gv=gv") 
+map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
 require("config.lazy")
-
