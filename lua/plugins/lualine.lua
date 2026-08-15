@@ -7,7 +7,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     options = {
-      theme = "wombat", -- adapts to whatever colorscheme is active
+      theme = "wombat",    -- adapts to whatever colorscheme is active
       globalstatus = true, -- one statusline for the whole window, not per-split
       section_separators = { left = "", right = "" },
       component_separators = { left = "", right = "" },

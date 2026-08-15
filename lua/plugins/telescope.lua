@@ -14,7 +14,7 @@ return {
   cmd = "Telescope",
   keys = {
     { "<leader>pf", "<cmd>Telescope find_files<CR>", desc = "Find file" },
-    { "<leader>ps", "<cmd>Telescope live_grep<CR>", desc = "Search string in repo" },
+    { "<leader>ps", "<cmd>Telescope live_grep<CR>",  desc = "Search string in repo" },
   },
   config = function()
     local telescope = require("telescope")

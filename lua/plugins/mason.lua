@@ -21,8 +21,30 @@ return {
       })
     end,
   },
-
   {
     "neovim/nvim-lspconfig",
+    config = function()
+      vim.lsp.config("lua_ls", {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" },
+            },
+          },
+        },
+      })
+
+      vim.lsp.enable("lua_ls")
+
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*.lua",
+        callback = function()
+          vim.lsp.buf.format({
+            async = false,
+            timeout_ms = 1000,
+          })
+        end,
+      })
+    end,
   },
 }

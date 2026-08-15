@@ -2,7 +2,7 @@ return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" }, -- icons next to file names
   keys = {
-    { "<C-n>", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file explorer" },
+    { "<C-n>",      "<cmd>NvimTreeToggle<CR>",   desc = "Toggle file explorer" },
     { "<leader>nf", "<cmd>NvimTreeFindFile<CR>", desc = "Find file in explorer" },
   },
   opts = {
@@ -14,7 +14,7 @@ return {
       custom = { "^.git$" }, -- but still hide the .git folder specifically
     },
     git = {
-      ignore = false,        -- also needed in some versions to stop git-ignore filtering
+      ignore = false, -- also needed in some versions to stop git-ignore filtering
     },
   },
 }
