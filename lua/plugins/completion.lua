@@ -14,7 +14,7 @@ return {
   event = "InsertEnter",
   dependencies = { "rafamadriz/friendly-snippets" }, -- common snippet collection
   opts = {
-    keymap = { preset = "default" },                 -- <C-space> open/toggle docs, <Tab>/<CR> accept, arrows to navigate
+    keymap = { preset = "enter" },                   -- <C-space> open/toggle docs, <Tab>/<CR> accept, arrows to navigate
     appearance = {
       -- Requires a Nerd Font in your terminal to render icons correctly;
       -- falls back to plain text otherwise (still functional, less pretty).

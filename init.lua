@@ -41,7 +41,7 @@ opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.wrap = false
 opt.list = true
-opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+-- opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Splits
 opt.splitright = true
@@ -62,6 +62,9 @@ opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldenable = false -- don't fold everything by default when you open a file
 opt.foldlevel = 99     -- start with everything unfolded (high number = mostly open)
+
+-- Window Separator
+vim.api.nvim_set_hl(0, "WinSeparator", {})
 
 --------------------------------------------------------------------------
 -- KEYMAPS
